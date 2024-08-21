@@ -78,20 +78,20 @@ window.onload = function() {
   };
   render(window.variables); // render the card for the first time
 
-  document
-    .querySelectorAll('.picker[for="socialMediaPosition"]')
-    .forEach(function(input) {
-      input.addEventListener("change", function() {
-        console.log("Social media position changed:", this.value);
+  // document
+  //   .querySelectorAll('.picker[for="socialMediaPosition"]')
+  //   .forEach(function(input) {
+  //     input.addEventListener("change", function() {
+  //       console.log("Social media position changed:", this.value);
 
-        // Update the social media position in the window.variables object
-        window.variables.socialMediaPosition = this.value;
-        console.log("Updated variables:", window.variables);
+  //       // Update the social media position in the window.variables object
+  //       window.variables.socialMediaPosition = this.value;
+  //       console.log("Updated variables:", window.variables);
 
-        // Render the profile card with the updated variables
-        render(window.variables);
-      });
-    });
+  //       // Render the profile card with the updated variables
+  //       render(window.variables);
+  //     });
+  //   });
 
   document.querySelectorAll(".picker").forEach(function(elm) {
     elm.addEventListener("change", function(e) {

@@ -1,0 +1,24 @@
+For this project, go to app.js
+
+* Add the ternary operators for the null to "" (5 lines):
+    let name = variables.name === null ? "" : variables.name;
+    let lastName = variables.lastName === null ? "" : variables.lastName;
+    let role = variables.role === null ? "" : variables.role;
+    let city = variables.city === null ? "" : variables.city;
+    let country = variables.country === null ? "" : variables.country;
+* Then change these lines inside of the document.querySelector("#widget_content").innerHTML to take the variable values:
+    <h1>${name} ${lastName}</h1>
+    <h2>${role}</h2>
+    <h3>${city}, ${country}</h3>
+    <ul class="${variables.socialMediaPosition}">
+        <li><a href="${variables.twitter}"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="${variables.github}"><i class="fab fa-github"></i></a></li>
+        <li><a href="${variables.linkedin}"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="${variables.instagram}"><i class="fab fa-instagram"></i></a>
+
+* Extra Notes: 
+    - Make sure the links for the a tags and the class name for the social media position picker are all wrapped in quotes 
+    (the variables have to be wrapped inside quotes as the variables itself do not have '' in it)
+
+
+That's it!!
